@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     </head>
 
     <body>
+
         <section>
             <div class="container">
                 <div class="col-12">
-                        <h1>Welcome to the Super Website</h1>
-                        <h3>A Multitasker Website That Offers You <span>4</span> - Almost Useless- Services! </h3>
+                    <h1>Welcome to the Super Website</h1>
+                    <h3>A Multitasker Website That Offers You <span>4</span> - Almost Useless- Services! </h3>
                 </div>
                 <div class="col-12">
                     <div class="image-box">
@@ -26,85 +28,69 @@
         <section>
             <div class="container">
                 <div class="row">
+
                     <div class="col-3">
                         <h1>Service Number <span>1</span></h1>
                         <p>We will calculate "2 * x + y % 2"!</p>
-                        
-                <form id="equation_form">
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="x">X:</label>
-                            <input type="text" id="x" name="x" onfocus=" this.value= ''">
-                        </div>
-                            <br>
-                            <div class="col-6">
-                            <label for="y">Y:</label>
-                            <input type="text" id="y" name="y" onfocus=" this.value= ''">
+                        <form id="equation_form">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="x">X:</label>
+                                    <input type="text" id="x" name="x" onfocus=" this.value= ''">
+                                </div>
+                                <br>
+                                <div class="col-6">
+                                <label for="y">Y:</label>
+                                <input type="text" id="y" name="y" onfocus=" this.value= ''">
+                                </div>
+                                <br>
                             </div>
+                            <input type="submit" class="btn" value="CLICK!">
+                        </form> 
+                        <p id="equation_result">Result</p>
+                    </div>  
+
+                    <div class="col-3">
+                        <h1>Service Number <span>2</span></h1>
+                        <p>Check if String is Palindrome!</p>
+                        <form id="palindrome_form">
+                            <label for="input">Input String</label>
+                            <input type="text" id="input" name="input" onfocus=" this.value= ''">
                             <br>
-                            
+                            <input type="submit" class="btn" value="CLICK!">
+                       </form> 
+                        <p id="palindrome_result">Result</p>
+                    </div> 
+
+                    <div class="col-3">
+                        <h1>Service Number <span>3</span></h1>
+                        <p> Remove Extra Spaces From String!</p>
+                        <form id="extraspace_form">
+                            <label for="spaces_input">Input String:</label>
+                            <input type="text" id="spaces_input" name="spaces_input" onfocus=" this.value= ''">
+                            <br>
+                            <input type="submit" class="btn" value="CLICK!">
+                        </form> 
+                        <p id="extraspace_result">Result</p>
                     </div>
-                    <input type="submit" id="btn" value="CLICK!">
-                </form> 
-                <p id="equation_result">Result</p>
-            </div>  
-            <div class="col-3">
-                <h1>Service Number <span>2</span></h1>
-                <p>Check if String is Palindrome!</p>
-               
-        <form id="palindrome_form">
-   
-                    <label for="input">Input String</label>
-                    <input type="text" id="input" name="input" onfocus=" this.value= ''">
-                    <br>
-                    <input type="submit" id="btn" value="CLICK!">
-               
-           
-        </form> 
-        <p id="palindrome_result">Result</p>
-    </div> 
-    <div class="col-3">
-        <h1>Service Number <span>3</span></h1>
-        <p> Remove Extra Spaces From String!</p>
-        
-<form id="extraspace_form">
 
-            <label for="spaces_input">Input String:</label>
-            <input type="text" id="spaces_input" name="spaces_input" onfocus=" this.value= ''">
-            <br>
-            <input type="submit" id="btn" value="CLICK!">
-       
-   
-</form> 
-<p id="extraspace_result">Result</p>
-</div> 
-<div class="col-3">
-    <h1>Service Number <span>4</span></h1>
-    <p>Check If Password Is Good!</p>
-    
-<form id="hashpassword_form">
+                    <div class="col-3">
+                        <h1>Service Number <span>4</span></h1>
+                        <p>Check If Password Is Good!</p>
+                        <form id="hashpassword_form">
+                            <label for="password_input">Enter Password:</label>
+                            <input type="text" id="password_input" name="password_input" onfocus=" this.value= ''">
+                            <br>
+                            <input type="submit" class="btn" value="CLICK!">
+                        </form> 
+                        <p id="hashpassword_result">Result</p> 
+                        <p id="hash"></p>    
+                    </div>   
 
-        <label for="password_input">Enter Password:</label>
-        <input type="text" id="password_input" name="password_input" onfocus=" this.value= ''">
-        <br>
-
-        <input type="submit" id="btn" value="CLICK!">
-   
-
-</form> 
-<p id="hashpassword_result">Result</p> 
-<p id="hash"></p>    
-</div>   
-        </div>   
-            
-            </div>
-           
+                </div>            
+            </div>            
         </section>
-
-
-
-
-
+        
         <script src="index.js"></script>
     </body>
 
