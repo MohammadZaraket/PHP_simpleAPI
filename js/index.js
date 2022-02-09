@@ -1,5 +1,5 @@
 // First Block is dealing with first form that claculates the equation
-let equation_url = new URL('http://localhost/PHP_simpleAPI/equation.php?');
+let equation_url = new URL('http://localhost/PHP_simpleAPI/php/equation.php?');
 let equation_form = document.getElementById("equation_form");
 let result = document.getElementById("equation_result");
 
@@ -18,7 +18,7 @@ equation_form.onsubmit = async (event) => {
 
 //Dealing with Second form that checks if the input string is palindrome or not
 
-let palindrome_url = new URL('http://localhost/PHP_simpleAPI/palindrome.php?input=');
+let palindrome_url = new URL('http://localhost/PHP_simpleAPI/php/palindrome.php?input=');
 let palindrome_form = document.getElementById("palindrome_form");
 let display_result = document.getElementById("palindrome_result");
 
@@ -36,7 +36,7 @@ palindrome_form.onsubmit = async (event) => {
 
 //Dealing with Third form that removes extra spaces from the input string
 
-let extraspace_url = new URL('http://localhost/PHP_simpleAPI/extraspace.php?input=');
+let extraspace_url = new URL('http://localhost/PHP_simpleAPI/php/extraspace.php?input=');
 let extraspace_form = document.getElementById("extraspace_form");
 let nospace_result = document.getElementById("extraspace_result");
 
@@ -54,7 +54,7 @@ extraspace_form.onsubmit = async (event) => {
 
 //Dealing with fourth form that checks if the input password is good and hash it using sha256
 
-let hashpassword_url = new URL('http://localhost/PHP_simpleAPI/hashpassword.php?password=');
+let hashpassword_url = new URL('http://localhost/PHP_simpleAPI/php/hashpassword.php?password=');
 let hashpassword_form = document.getElementById("hashpassword_form");
 let display_hashpassword_result = document.getElementById("hashpassword_result");
 let display_hashpassword_result2 = document.getElementById("hash");
