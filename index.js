@@ -51,3 +51,35 @@ extraspace_form.onsubmit = async (event) => {
 
     nospace_result.innerHTML=extraspace_result.return;
 };
+
+
+
+
+
+
+
+let hashpassword_url = new URL('http://localhost/PHP_simpleAPI/hashpassword.php?password=');
+let hashpassword_form = document.getElementById("hashpassword_form");
+let display_hashpassword_result = document.getElementById("hashpassword_result");
+let display_hashpassword_result2 = document.getElementById("hash");
+
+
+hashpassword_form.onsubmit = async (event) => {
+    event.preventDefault();
+
+    let input = document.getElementById("password_input").value;
+   
+    let hashpassword_response = await fetch(hashpassword_url+input);
+    let hashpassword_result = await hashpassword_response.json();
+
+    display_hashpassword_result.innerHTML=hashpassword_result.status;
+
+    if (hashpassword_result.Hashed == undefined){
+        display_hashpassword_result2.innerHTML="Will Not Be Hashed!"
+    }
+    else{
+
+        display_hashpassword_result2.innerHTML= hashpassword_result.Hashed;
+    }
+ 
+};
