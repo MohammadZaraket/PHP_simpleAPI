@@ -18,7 +18,7 @@ body{
 }
 
 section{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 
@@ -45,7 +45,7 @@ h3{
     line-height: normal;
     float: left;
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 span{
     color: rgb(255, 217, 0);
@@ -73,7 +73,7 @@ input{
     font-size: 10px;
     line-height:inherit;
     size: 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 
@@ -120,3 +120,15 @@ input{
     
 
   }
+
+
+
+  @media screen and (max-width:750px) {
+  
+    .col-3, .col-6{
+            width: 100%;
+            margin: 0;
+        }
+
+    #btn{ margin-top: 5%; }
+}
