@@ -16,6 +16,6 @@
         $status = ["status" => "NO NOT Palindrome!"];
     }
 
-echo json_encode($array);
+echo json_encode($status);
 
 ?>
